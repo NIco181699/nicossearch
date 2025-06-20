@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nico's Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    #text-image {
+      width: 320px;
+      margin-bottom: 30px;
+    }
+    .search-box {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    input[type="text"] {
+      flex: 1;
+      padding: 12px 15px;
+      font-size: 18px;
+      border: 2px solid #ddd;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+    button[type="submit"] {
+      border: 2px solid #ddd;
+      border-left: none;
+      background: white;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      border-radius: 0 5px 5px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      transition: background-color 0.3s ease;
+    }
+    button[type="submit"]:hover {
+      background-color: #f0f0f0;
+    }
+    button[type="submit"] img {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Your Text Image -->
+  <img
+    id="text-image"
+    src="https://i.imgur.com/8nNm3cp.png"
+    alt="Nico’s Search Text"
+  />
+
+  <!-- Search Form -->
+  <form
+    class="search-box"
+    action="https://cse.google.com/cse"
+    method="get"
+    target="_blank"
+  >
+    <input type="hidden" name="cx" value="0742a3ec6693746ce" />
+    <input
+      type="text"
+      name="q"
+      placeholder="Search Nico's Search..."
+      required
+      autocomplete="off"
+    />
+    <button type="submit" aria-label="Search">
+      <img src="https://i.imgur.com/TwRzEEt.png" alt="Search Icon" />
+    </button>
+  </form>
+
+</body>
+</html>
+
